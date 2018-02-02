@@ -6,9 +6,9 @@ if(!isset($_SESSION)){
 }
 
 $server = 'localhost';
-$user = 'root';
-$pass = 'root';
-$mydb = 'staff_master';
+$user = 'yev';
+$pass = 'admin';
+$mydb = 'ykantoro_mydb';
 $table_name = 'staff';
 
 
