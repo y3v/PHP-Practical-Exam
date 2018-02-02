@@ -58,9 +58,9 @@ button[name="show"]{
 		<button name="show">Search by Salary</button>
 	</form>
 	<form action="../controller/staff_service.php">
-		<h2>Search Employees by Branch</h2>
+		<h2>See which branch employee works at</h2>
 		<div>
-			<label>Branch name</label>
+			<label>Employee name</label>
 			<input type="text" name="branch" value="<?php if(isset($_GET['jobCodeUpdate'])){echo $_GET['jobCodeUpdate'];} ?>" />
 		</div>
 		<button name="show">Search by Branch</button>
@@ -68,10 +68,15 @@ button[name="show"]{
 	<form action="../controller/staff_service.php">
 		<h2>Search by which properties they administer</h2>
 		<div>
-			<label>Property Name</label>
+			<label>Employee Name</label>
 			<input type="text" name="property" value="<?php if(isset($_GET['jobCodeUpdate'])){echo $_GET['jobCodeUpdate'];} ?>" />
 		</div>
-		<button name="show">Search by Branch</button>
+		<button name="show">Search by Property</button>
+	</form>
+	<form action="../controller/staff_service.php">
+		<h2>See All Staff Descriptions!</h2>
+		<button name="description" value="see">See all Staff Descriptions!</button>
+		<input type="hidden" name="id" value="0"/>
 	</form>
 	
 </body>
